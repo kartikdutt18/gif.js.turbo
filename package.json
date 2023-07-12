@@ -1,6 +1,6 @@
 {
   "name": "gif.js.turbo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GIF encoding library ",
   "author": "Kartik Dutt<npm@kartikdutt18>, Roman Viskin <npm@terikon.com>",
   "main": "./dist/gif.js",
