@@ -1,10 +1,10 @@
 {
-  "name": "gif.js.optimized2",
-  "version": "1.0.5",
-  "description": "JavaScript GIF encoding library",
-  "author": "Roman Viskin <npm@terikon.com>",
+  "name": "gif.js.turbo",
+  "version": "1.0.0",
+  "description": "GIF encoding library ",
+  "author": "Kartik Dutt<npm@kartikdutt18>, Roman Viskin <npm@terikon.com>",
   "main": "./dist/gif.js",
-  "repository": "https://github.com/kartikdutt18/gif.js.optimized",
+  "repository": "https://github.com/kartikdutt18/gif.js.turbo",
   "devDependencies": {
     "@babel/core": "^7.22.8",
     "@babel/preset-env": "^7.22.7",
@@ -19,6 +19,9 @@
   "browser": "./dist/gif.js",
   "keywords": [
     "gif",
+    "writer",
+    "encoding",
+    "creater",
     "animation",
     "encoder"
   ],
