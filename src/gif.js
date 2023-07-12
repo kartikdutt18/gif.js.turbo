@@ -112,8 +112,8 @@ class GIF extends EventEmitter {
   }
 
   abort() {
-    for (let i = 0; i < this.activeWorkers.length; i++) {
-      this.activeWorkers[i].terminate();
+    for (let i = 0; i < this.freeWorkers.length; i++) {
+      this.freeWorkers[i].terminate();
     }
     this.emit('abort')
   }
