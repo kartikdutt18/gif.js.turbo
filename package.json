@@ -1,0 +1,27 @@
+{
+  "name": "gif.js.optimized2",
+  "version": "1.0.5",
+  "description": "JavaScript GIF encoding library",
+  "author": "Roman Viskin <npm@terikon.com>",
+  "main": "./dist/gif.js",
+  "repository": "https://github.com/kartikdutt18/gif.js.optimized",
+  "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0"
+  },
+  "scripts": {
+    "prepublish": "webpack --config build/webpack.main.config.js && webpack --config build/webpack.worker.config.js"
+  },
+  "browser": "./dist/gif.js",
+  "keywords": [
+    "gif",
+    "animation",
+    "encoder"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
