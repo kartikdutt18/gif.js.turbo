@@ -11,6 +11,7 @@ const defaultGifConfig = {
   height: null,
   transparent: null,
   debug: false,
+  useTransferFrame: false,
 };
 
 const defaultFrameConfig = {
@@ -103,7 +104,7 @@ class GIF extends EventEmitter {
       isLastFrame
     );
     this.activeWorkers.push(worker);
-    if (this.gitConfig.useTransferFrame && task.previousFrameData) {
+    if (this.gifConfig.useTransferFrame && task.previousFrameData) {
       worker.postMessage(task, [task.previousFrameData.buffer]);
     } else {
       worker.postMessage(task);
