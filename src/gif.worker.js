@@ -33,11 +33,12 @@ const renderFrame = (frame) => {
   frame.cursor = stream.cursor;
   frame.pageSize = stream.constructor.pageSize;
 
-  if (frame.canTransfer) {
-    const transfer = frame.data.map((page) => page.buffer);
-    self.postMessage(frame, transfer);
+  const imagePartsData = { cursor: frame.cursor, pageSize: frame.pageSize, data: frame.data, canTransfer: frame.canTransfer, index: frame.index }
+  if (imagePartsData.canTransfer) {
+    const transfer = imagePartsData.data.map((page) => page.buffer);
+    self.postMessage(imagePartsData, transfer);
   } else {
-    self.postMessage(frame);
+    self.postMessage(imagePartsData);
   }
 };
 

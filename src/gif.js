@@ -169,11 +169,6 @@ class GIF extends EventEmitter {
     }
 
     this.imageParts[frame.index] = frame;
-
-    if (this.gifConfig.options === true && !duplicate) {
-      this.gifConfig.globalPalette = frame.globalPalette;
-    }
-
     this.throttler.notify();
     this.emit('progress');
   }

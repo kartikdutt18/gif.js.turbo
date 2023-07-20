@@ -99,6 +99,7 @@ Options can be passed to the constructor or using the `setOptions` method.
 | applyCropOptimization  | false          | Saves memory of final GIF by upto 5-10%,  applyTransparencyOptimization needs to be on for this to work       |
 | transparencyDifferenceThreshold  | 1          | Loss level of GIF, 1 implies loss-less gif. Higher the value, higher the loss. L2 loss used for gifs with dithering else L1. |
 | useTransferFrame | `false` | Use transfer of previous frame to reduce memory |
+| globalPalette | `null` | By default null, pass null or global palette generated through NewuQuant. |
 
 If width or height is `null` image size will be deteremined by first frame added.
 
